@@ -7,10 +7,8 @@
           "key": "x-robots-tag",
           "value": "index, follow"
         }
-      ]
+      ],
+      "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
     }
   ]
-},
-{
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
