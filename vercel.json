@@ -1,5 +1,6 @@
 {
   "headers": [
+    { "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] },
     {
       "source": "/(.*)",
       "headers": [
@@ -11,4 +12,3 @@
     }
   ]
 }
-{ "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] }
