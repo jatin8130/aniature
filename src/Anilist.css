@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.filter{
+    width: 20cm;
+    border: none;
+    background-color: white;
+    color: white;
+    border-radius: 0;
+}
+.form-control::placeholder{
+    color: black;
+}
+.trending{
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+
+.anime-box{
+    width: 90%;
+    margin: 1cm auto;
+}
+
+.anime{    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.card{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+.card-img-top{
+    height: 16rem;
+    transition: 0.2s linear;
+}
+
+@media screen and (max-width: 1130px) {
+    .anime{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .anime{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .blue{
+        height: 0.8cm;
+        width: 8px;
+        border-radius: 20px;
+        margin-right: 6px;
+    }
+    .name{
+        font-size: 18px;
+    }
+    .card-img-top{
+        height: 14rem;
+    }
+    .japanese{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .anime{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .anime{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

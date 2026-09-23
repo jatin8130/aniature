@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.anivid{
+    height: 451px;
+    width: 806px;
+}
+.epilist{
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+.epivid{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.49);
+    height: 1cm;
+    width: 2cm;
+    margin: 2px;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+.epivid:hover{
+    background-color: #FFBADE;
+    color: black;
+    border-radius: 10px;
+}
+.video-detail{
+    text-align: start;
+    margin: 1cm 10px;
+    font-size: 0.5cm;
+}
+.video-details{
+    text-align: start;
+    margin: 10px 0;
+}
+
+.animes{    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.recommandeds{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .recommandeds{
+        display: block;
+    }
+
+    .recommanded{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .stream-flex{
+        flex-direction: column;
+    }
+
+    .anivid{
+        height: 10cm;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .animes{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .row{
+        flex-direction: column;
+    }
+    .video-detail{
+        margin: 0.5cm 0cm;
+        font-size: 0.43cm;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .animes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .anivid{
+        height: 5cm;
+        width: 100%;
+    }
+}

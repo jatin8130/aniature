@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-expand-lg{
+    background-color: #2D2B44;
+}
+.navbar-brand{
+    margin-bottom: 2px;
+    letter-spacing: 4px;
+}
+.logos{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 1.5cm;
+    width: auto;
+    margin-right: 5px;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 15px;
+    margin-left: 1cm;
+}
+
+.nav-link-name{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link-name:hover{
+    color: #FFBADE;
+}
+
+@media screen and (max-width: 993px) {
+    .navbar-nav{
+        margin: 0;
+    }
+}
